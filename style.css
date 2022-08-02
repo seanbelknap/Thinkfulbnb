@@ -40,7 +40,6 @@ main img {
   display: flex;
   flex-direction: column;
 }
-
 .item {
   flex: 1;
   margin: 10px;
@@ -63,7 +62,15 @@ header {
   font-size: 72px;
   color: #fff;
 }
-
+header nav{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#menu{
+  display: flex;
+  padding-left: 0;
+}
 header nav ul li {
   list-style-type: none;
 }
@@ -104,6 +111,16 @@ form button {
   width: 100%;
 }
 
+.searchList{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+section img {
+  width: 100%;
+  margin-bottom: 15px;
+}
 /* -------  Footer ------- */
 
 footer {
@@ -117,3 +134,43 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media only screen and (min-width: 480px) {
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .logo{
+    font-size: 40px;
+  }
+  #menu{
+    padding-bottom: 12px;
+  }
+  .group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .searchList{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  } 
+  #searchBtn{
+    width: 20%;
+  }
+  .item-double {
+    display: flex;
+    align-items: center;
+  }
+  .item-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+}
